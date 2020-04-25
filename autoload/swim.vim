@@ -1,6 +1,5 @@
 function swim#leave()
   let g:swim_previous_input_method = swim#current()
-  echomsg 'previous: ' . g:swim_previous_input_method
   call swim#use(g:swim_default_input_method)
 endfunction
 
