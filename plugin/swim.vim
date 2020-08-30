@@ -8,9 +8,13 @@ let g:swim_dir = expand('<sfile>:p:h:h')
 
 let g:swim_previous_input_method = ''
 
-let g:swim_default_input_method = 'com.apple.keylayout.ABC'
+if !exists(g:swim_default_input_method)
+  let g:swim_default_input_method = 'com.apple.keylayout.ABC'
+endif
 
-let g:swim_on_ft = ['tex']
+if !exists(g:swim_on_ft)
+  let g:swim_on_ft = ['tex', '']
+endif
 
 augroup swim
   autocmd!
