@@ -8,7 +8,7 @@ let g:swim_dir = expand('<sfile>:p:h:h')
 
 let g:swim_previous_input_method = ''
 
-let g:swim_default_input_method = get(g:, 'swim_default_imput_method', 'com.apple.keylayout.ABC')
+let g:swim_default_input_method = get(g:, 'swim_default_input_method', 'com.apple.keylayout.ABC')
 
 let g:swim_on_ft = get(g:, 'swim_on_ft', ['tex', ''])
 
