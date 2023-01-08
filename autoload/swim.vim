@@ -8,10 +8,7 @@ function swim#current()
 endfunction
 
 function swim#use(input_method)
-  let l:use_previous = index(g:swim_on_ft, &filetype)
-  if l:use_previous != -1
-    call swim#do('use '.a:input_method)
-  endif
+  call swim#do('use '.a:input_method)
 endfunction
 
 function swim#do(cmd)
