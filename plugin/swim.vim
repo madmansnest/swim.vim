@@ -4,6 +4,10 @@ endif
 
 let g:loaded_swim = 1
 
+let g:using_swim = 1
+
+nnoremap <leader>q :call swim#toggle()<cr>
+
 let g:swim_dir = get(g:, 'swim_dir', expand('<sfile>:p:h:h'))
 
 let g:swim_default_input_method = get(g:, 'swim_default_input_method', 'com.apple.keylayout.ABC')
